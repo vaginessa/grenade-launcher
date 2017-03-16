@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Black">
+    </style>
+    
+    <style name="CustomTheme" parent="android:Theme.Wallpaper.NoTitleBar">
+    </style>
+
+    <style name="NoTheme" parent="android:Theme.NoDisplay">
+    </style>
+
+</resources>

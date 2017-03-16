@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <ImageButton
+        android:id="@+id/button_group_up"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:focusable="false"
+        android:textColor="@color/app_font_color"
+        android:textSize="30sp"
+        android:layout_toRightOf="@+id/button_group_down"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_up"/>
+
+    <ImageButton
+        android:id="@+id/button_group_down"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:focusable="false"
+        android:textColor="@color/app_font_color"
+        android:textSize="30sp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:padding="10dp"
+        android:src="@drawable/ic_down"
+        android:background="@null"/>
+
+    <TextView
+        android:id="@+id/textLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/button_group_up"
+        android:padding="5dp"/>
+
+    <ImageView
+        android:id="@+id/image_home"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/button_group_down"
+        android:src="@drawable/ic_home"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"/>
+
+    <ImageView
+            android:id="@+id/image_game"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_games"
+            android:layout_toLeftOf="@+id/image_home"
+            android:layout_centerVertical="true"
+            android:padding="5dp"/>
+
+    <ImageView
+            android:id="@+id/image_app"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_applications"
+            android:layout_toLeftOf="@+id/image_game"
+            android:layout_centerVertical="true"
+            android:padding="5dp"/>
+
+</RelativeLayout>

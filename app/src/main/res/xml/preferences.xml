@@ -1,0 +1,204 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<PreferenceScreen
+		android:title="@string/pref_screen_display">
+	            
+	    <PreferenceCategory
+	            android:title="@string/pref_category_display">   
+
+		    <EditTextPreference
+		        android:defaultValue="@string/pref_default_grid_width"
+		        android:inputType="number"
+		        android:key="key_grid_width"
+		        android:maxLines="1"
+		        android:selectAllOnFocus="true"
+		        android:singleLine="true"
+		        android:title="@string/pref_title_grid_width"
+		        android:summary="@string/pref_description_grid_width" />
+		    
+		    <EditTextPreference
+		        android:defaultValue="@string/pref_default_grid_height"
+		        android:inputType="number"
+		        android:key="key_grid_height"
+		        android:maxLines="1"
+		        android:selectAllOnFocus="true"
+		        android:singleLine="true"
+		        android:title="@string/pref_title_grid_height"
+		        android:summary="@string/pref_description_grid_height" />
+
+            <ListPreference
+                    android:defaultValue="0"
+                    android:entries="@array/pref_list_layout"
+                    android:entryValues="@array/pref_values_layout"
+                    android:key="key_layout"
+                    android:negativeButtonText="@null"
+                    android:positiveButtonText="@null"
+                    android:title="@string/pref_title_layout"
+                    android:summary="@string/pref_description_layout" />
+
+            <ListPreference
+                    android:defaultValue="0"
+                    android:entries="@array/pref_list_display_tabs"
+                    android:entryValues="@array/pref_values_display_tabs"
+                    android:key="key_display_tabs"
+                    android:negativeButtonText="@null"
+                    android:positiveButtonText="@null"
+                    android:title="@string/pref_title_display_tabs"
+                    android:summary="@string/pref_description_display_tabs" />
+
+        </PreferenceCategory>
+        <PreferenceCategory
+                android:title="@string/pref_category_window">
+
+            <EditTextPreference
+                    android:defaultValue="@string/pref_default_wallpaper_alpha"
+                    android:inputType="number"
+                    android:key="key_wallpaper_alpha"
+                    android:maxLines="1"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:title="@string/pref_title_wallpaper_alpha"
+                    android:summary="@string/pref_description_wallpaper_alpha" />
+
+            <CheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="key_notification_bar"
+                    android:summary="@string/pref_description_notification_bar"
+                    android:title="@string/pref_title_notification_bar" />
+
+        </PreferenceCategory>
+        <PreferenceCategory
+                android:title="@string/pref_category_icon">
+
+            <CheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="key_icon_enabled"
+                    android:summary="@string/pref_description_icon_enabled"
+                    android:title="@string/pref_title_icon_enabled" />
+
+            <EditTextPreference
+		        android:defaultValue="@string/pref_default_icon_size"
+		        android:inputType="number"
+		        android:key="key_icon_size"
+		        android:maxLines="1"
+		        android:selectAllOnFocus="true"
+		        android:singleLine="true"
+		        android:title="@string/pref_title_icon_size"
+		        android:summary="@string/pref_description_icon_size" />
+		    
+		    <EditTextPreference
+		        android:defaultValue="@string/pref_default_icon_alpha"
+		        android:inputType="number"
+		        android:key="key_icon_alpha"
+		        android:maxLines="1"
+		        android:selectAllOnFocus="true"
+		        android:singleLine="true"
+		        android:title="@string/pref_title_icon_alpha"
+		        android:summary="@string/pref_description_icon_alpha" />
+
+        </PreferenceCategory>
+        <PreferenceCategory
+                android:title="@string/pref_category_font">
+
+            <CheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="key_font_enabled"
+                    android:summary="@string/pref_description_font_enabled"
+                    android:title="@string/pref_title_font_enabled" />
+
+		    <EditTextPreference
+		        android:defaultValue="@string/pref_default_font_size"
+		        android:inputType="number"
+		        android:key="key_font_size"
+		        android:maxLines="1"
+		        android:selectAllOnFocus="true"
+		        android:singleLine="true"
+		        android:title="@string/pref_title_font_size"
+		        android:summary="@string/pref_description_font_size" />
+
+            <ListPreference
+                    android:defaultValue="0"
+                    android:entries="@array/pref_list_font_typeface"
+                    android:entryValues="@array/pref_values_font_typeface"
+                    android:key="key_font_typeface"
+                    android:negativeButtonText="@null"
+                    android:positiveButtonText="@null"
+                    android:title="@string/pref_title_font_typeface"
+                    android:summary="@string/pref_description_font_typeface" />
+
+            <ListPreference
+                    android:defaultValue="0"
+                    android:entries="@array/pref_list_font_color"
+                    android:entryValues="@array/pref_values_font_color"
+                    android:key="key_font_color"
+                    android:negativeButtonText="@null"
+                    android:positiveButtonText="@null"
+                    android:title="@string/pref_title_font_color"
+                    android:summary="@string/pref_description_font_color" />
+
+            <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="key_font_shadow_enabled"
+                    android:summary="@string/pref_description_font_shadow_enabled"
+                    android:title="@string/pref_title_font_shadow_enabled" />
+
+
+
+		</PreferenceCategory>
+	</PreferenceScreen>	
+	
+	
+    <PreferenceScreen
+        android:title="@string/pref_screen_sensors_security">
+		    
+	    <PreferenceCategory
+	            android:title="@string/pref_category_sensors"> 
+	            
+		    <ListPreference
+		        android:defaultValue="0"
+		        android:entries="@array/pref_list_orientation"
+		        android:entryValues="@array/pref_values_orientation"
+		        android:key="key_orientation"
+		        android:negativeButtonText="@null"
+		        android:positiveButtonText="@null"
+		        android:title="@string/pref_title_orientation"
+		        android:summary="@string/pref_description_orientation" />		        
+	        
+		    <CheckBoxPreference
+		        android:defaultValue="false"
+		        android:key="key_proximity_lock"
+		        android:summary="@string/pref_description_proximity_lock"
+		        android:title="@string/pref_title_proximity_lock" />
+
+        </PreferenceCategory>
+        <PreferenceCategory
+                android:title="@string/pref_category_security">
+
+            <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="key_pin_lock"
+                    android:summary="@string/pref_description_pin_lock"
+                    android:title="@string/pref_title_pin_lock" />
+		    		            			    
+	    </PreferenceCategory>
+		    
+	</PreferenceScreen>
+		
+    
+    <PreferenceScreen
+    	android:title="@string/pref_screen_advanced">	
+    	
+	    <PreferenceCategory
+	            android:title="@string/pref_category_advanced">
+		        
+		    <CheckBoxPreference
+		        android:defaultValue="false"
+		        android:key="key_restart_launcher"
+		        android:summary="@string/pref_description_restart_launcher"
+		        android:title="@string/pref_title_restart_launcher" />
+             
+	    </PreferenceCategory>
+	    		    
+    </PreferenceScreen>
+	       
+</PreferenceScreen>

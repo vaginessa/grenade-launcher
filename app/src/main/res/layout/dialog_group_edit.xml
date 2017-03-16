@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" xmlns:android="http://schemas.android.com/apk/res/android">
+        
+    <EditText
+        android:id="@+id/text_group_label"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="text|textCapWords|textNoSuggestions"
+        android:maxLines="1"
+        android:layout_alignParentLeft="true"/>
+
+    <CheckBox
+        android:id="@+id/check_flag_app"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="@string/dialog_group_flag_app"
+        android:layout_below="@+id/check_flag_home"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"/>
+
+    <CheckBox
+            android:id="@+id/check_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/dialog_group_delete"
+            android:layout_below="@+id/check_flag_game"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"/>
+
+    <CheckBox
+            android:id="@+id/check_flag_home"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/dialog_group_flag_home"
+            android:layout_below="@+id/text_group_label"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"/>
+
+    <CheckBox
+            android:id="@+id/check_flag_game"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/dialog_group_flag_game"
+            android:layout_below="@+id/check_flag_app"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

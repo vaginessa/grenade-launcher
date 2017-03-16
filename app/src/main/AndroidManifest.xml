@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bitshift.grenadelauncher"
+    android:versionCode="9"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19"/>
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <!--<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"></uses-permission>-->
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:stateNotNeeded="true"
+        android:clearTaskOnLaunch="true">
+
+        <activity
+            android:name="bitshift.grenadelauncher.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/CustomTheme"
+            android:excludeFromRecents="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="bitshift.grenadelauncher.SettingsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="bitshift.grenadelauncher.MainActivity">
+        </activity>
+
+        <activity
+            android:name="bitshift.grenadelauncher.GroupEditorActivity"
+            android:label="@string/title_activity_group"
+            android:parentActivityName="bitshift.grenadelauncher.MainActivity">
+        </activity>
+
+        <activity
+            android:name="bitshift.grenadelauncher.ShortcutActivity"
+            android:label="@string/title_activity_shortcut"
+            android:parentActivityName="bitshift.grenadelauncher.MainActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="bitshift.grenadelauncher.IntentActivity"
+            android:label="@string/title_activity_wallpaper"
+            android:icon="@drawable/black"
+            android:parentActivityName="bitshift.grenadelauncher.MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/NoTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_WALLPAPER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="bitshift.grenadelauncher.action.VIEW_GROUP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="bitshift.grenadelauncher.action.LOCK_DEVICE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="bitshift.grenadelauncher.IntentMgr" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.launcher.action.INSTALL_SHORTCUT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="bitshift.grenadelauncher.DeviceAdminMgr"
+            android:label="@string/app_name"
+            android:description="@string/device_admin_description"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data android:name="android.app.device_admin"
+                android:resource="@xml/device_admin" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+</manifest>

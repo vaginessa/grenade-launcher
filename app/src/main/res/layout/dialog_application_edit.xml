@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" xmlns:android="http://schemas.android.com/apk/res/android">
+        
+    <EditText
+        android:id="@+id/text_app_label"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/check_uninstall"
+        android:ems="10"
+        android:inputType="text|textCapWords|textNoSuggestions"
+        android:maxLines="1" />
+    
+    <Spinner
+        android:id="@+id/spinner_app_group"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/text_app_label" />
+
+    <ImageView
+        android:id="@+id/image_app_icon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinner_app_group"
+        android:padding="10dp"
+        android:src="@drawable/ic_launcher" />
+
+    <CheckBox
+        android:id="@+id/check_uninstall"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:text="@string/dialog_title_app_uninstall"
+        android:layout_below="@+id/spinner_app_group"
+        android:layout_toRightOf="@+id/image_app_icon"/>
+
+</RelativeLayout>

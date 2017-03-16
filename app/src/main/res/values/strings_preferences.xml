@@ -1,0 +1,138 @@
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+    
+    <string name="pref_screen_display">Display</string>
+    <string name="pref_screen_sensors_security">Sensors and Security</string>
+    <string name="pref_screen_advanced">Advanced</string>
+    <string name="pref_screen_groups">Groups</string>
+
+    <string name="pref_category_display">Display</string>
+    <string name="pref_category_window">Window</string>
+    <string name="pref_category_icon">Icon</string>
+    <string name="pref_category_font">Text</string>
+    <string name="pref_category_sensors">Sensors</string>
+    <string name="pref_category_security">Security</string>
+    <string name="pref_category_advanced">Advanced</string>
+
+
+    <string name="pref_title_notification_bar">Notification Bar</string>
+    <string name="pref_description_notification_bar">Show notification bar</string>
+
+
+    <string name="pref_title_restart_launcher">Restart Launcher</string>
+    <string name="pref_description_restart_launcher">Relaunches the launcher</string>
+
+
+    <string name="pref_title_wallpaper_alpha">Wallpaper Opacity</string>
+    <string name="pref_description_wallpaper_alpha">Wallpaper opacity (default 0)</string>
+    <string name="pref_default_wallpaper_alpha">0</string>
+
+
+    <string name="pref_title_icon_size">Icon Size</string>
+    <string name="pref_description_icon_size">Icon display size (default 40)</string>
+    <string name="pref_default_icon_size">40</string>
+    
+    <string name="pref_title_icon_alpha">Icon Opacity</string>
+    <string name="pref_description_icon_alpha">Icon opacity (default 100)</string>
+    <string name="pref_default_icon_alpha">100</string>
+
+    <string name="pref_title_icon_enabled">Display Icons</string>
+    <string name="pref_description_icon_enabled">Display application icons</string>
+
+
+    <string name="pref_title_font_size">Font Size</string>
+    <string name="pref_description_font_size">Font display size (default 14)</string>
+    <string name="pref_default_font_size">14</string>
+
+    <string name="pref_title_font_enabled">Display Labels</string>
+    <string name="pref_description_font_enabled">Display application labels</string>
+
+    <string name="pref_title_font_shadow_enabled">Enable shadows</string>
+    <string name="pref_description_font_shadow_enabled">Display shadow under text</string>
+
+    <string name="pref_title_font_typeface">Font Typeface</string>
+    <string name="pref_description_font_typeface">Change font</string>
+    <string-array name="pref_list_font_typeface">
+        <item>Normal</item>
+        <item>Sans</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array>
+    <string-array name="pref_values_font_typeface">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="pref_title_font_color">Font Color</string>
+    <string name="pref_description_font_color">Change font color</string>
+    <string-array name="pref_list_font_color">
+        <item>White</item>
+        <item>Black</item>
+        <item>Gray</item>
+    </string-array>
+    <string-array name="pref_values_font_color">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+
+    <string name="pref_title_grid_width">Grid Width</string>
+    <string name="pref_description_grid_width">Grid columns (default 4)</string>
+    <string name="pref_default_grid_width">4</string>
+    
+    <string name="pref_title_grid_height">Grid Height</string>
+    <string name="pref_description_grid_height">Grid rows (default 6)</string>
+    <string name="pref_default_grid_height">6</string>    
+    
+    <string name="pref_title_proximity_lock">Proximity Lock</string>
+    <string name="pref_description_proximity_lock">Check proximity sensor before launching application</string>
+
+    <string name="pref_title_pin_lock">Pin Lock</string>
+    <string name="pref_description_pin_lock">Set a pin/code to lock unwanted launcher access</string>
+
+    <string name="pref_title_layout">Layout</string>
+    <string name="pref_description_layout">Layout style</string>
+    <string-array name="pref_list_layout">
+        <item>Vertical</item>
+        <item>Horizontal</item>
+        <item>Centered</item>
+    </string-array>
+    <string-array name="pref_values_layout">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+        
+    <string name="pref_title_display_tabs">Display Tabs</string>
+    <string name="pref_description_display_tabs">When to display tab bar</string>
+    <string-array name="pref_list_display_tabs">
+        <item>Always</item>
+        <item>Landscape Only</item>
+        <item>Portrait Only</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_values_display_tabs">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>-1</item>
+    </string-array>
+    
+    <string name="pref_title_orientation">Screen Orientation</string>
+    <string name="pref_description_orientation">Set screen rotation</string>
+    <string-array name="pref_list_orientation">
+        <item>Auto-rotate</item>
+        <item>Landscape</item>
+        <item>Portrait</item>
+    </string-array>
+    <string-array name="pref_values_orientation">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>
